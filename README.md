@@ -28,14 +28,18 @@ W projekcie wykorzystano dane:
 
 Analiza została przeprowadzona w układzie współrzędnych EPSG:2180.
 
-## Wyniki
+## Wnioski
 
 Z danych OpenStreetMap wyodrębiono 62 place zabaw. Analiza wykazała, że 42% powierzchni miasta znajduje się w zasięgu 500 m od placu zabaw.
-Jednocześnie 44% budynków ma dostęp do placu zabaw w promieniu 500 m.
+Jednocześnie 44% budynków ma dostęp do placu zabaw w promieniu 500 m. Wyniki sugerują, że nadal istnieją obszary o ograniczonym dostępie do placów zabaw. Analiza może stanowić podstawę do dalszych badań nad lokalizacją nowych placów zabaw w celu poprawy dostępności przestrzeni rekreacyjnych dla mieszkańców.
 
 ## Mapa wynikowa
 
 ![Mapa dostępności placów zabaw](place_zabaw.png)
+
+## Ograniczenia danych
+
+Należy uwzględnić, że dane OpenStreetMap mają charakter społecznościowy, co może wpływać na ich kompletność i aktualność. Nie wszystkie obiekty (np. place zabaw lub budynki) mogą być w pełni zmapowane, a ich dokładność zależy od jakości danych wprowadzanych przez użytkowników. W związku z tym wyniki analizy należy traktować jako przybliżenie rzeczywistej dostępności przestrzennej.
 
 ## Autor
 
