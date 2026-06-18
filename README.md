@@ -28,8 +28,6 @@ W ramach przetwarzania danych wykonano:
 - agregację wyników i obliczenie wskaźników dostępności,
 - wizualizacja wyników w QGIS.
 
-Analiza została przeprowadzona w układzie współrzędnych EPSG:2180.
-
 ## Wnioski
 
 Z danych OpenStreetMap wyodrębiono 62 place zabaw. Analiza wykazała, że 42% powierzchni miasta znajduje się w zasięgu 500 m od placu zabaw.
