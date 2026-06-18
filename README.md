@@ -19,11 +19,13 @@ W projekcie wykorzystano dane:
 
 ## Zakres prac
 
-- pozyskanie danych OpenStreetMap oraz Państwowego Rejestru Granic,
-- import danych do PostgreSQL,
-- przygotowanie danych w PostgreSQL/PostGIS (m.in. wyodrębnienie warstw z placami zabaw i budynkami, transformacja układów współrzędnych oraz utworzenie indeksów przestrzennych),
-- utworzenie buforów 500 m wokół placów zabaw oraz ich agregacja,
-- analiza pokrycia powierzchni miasta oraz dostępności budynków w odniesieniu do placów zabaw,
+W ramach przetwarzania danych wykonano:
+- import danych przestrzennych do bazy PostgreSQL,
+- selekcję i przygotowanie warstw (place zabaw, budynki, granice miasta),
+- transformację układów współrzędnych do jednolitego układu EPSG:2180,
+- utworzenie indeksów przestrzennych w celu optymalizacji zapytań,
+- wygenerowanie buforów o promieniu 500 m wokół placów zabaw,
+- agregację wyników i obliczenie wskaźników dostępności,
 - wizualizacja wyników w QGIS.
 
 Analiza została przeprowadzona w układzie współrzędnych EPSG:2180.
