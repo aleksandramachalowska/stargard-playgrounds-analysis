@@ -11,14 +11,22 @@ Celem analizy było określenie, jaka część powierzchni miasta oraz budynków
 - PostGIS
 - QGIS
 
+## Dane
+
+W projekcie wykorzystano dane:
+- OpenStreetMap (lokalizacja placów zabaw, budynków),
+- Państwowy Rejestr Granic (granice administracyjne Stargardu i Polski).
+
 ## Zakres prac
 
 - pozyskanie danych OpenStreetMap oraz Państwowego Rejestru Granic,
 - import danych do PostgreSQL,
-- przygotowanie danych w PostgreSQL/PostGIS,
-- utworzenie buforów 500 m wokół placów zabaw,
-- analiza pokrycia powierzchni miasta oraz dostępności budynków do placów zabaw,
+- przygotowanie danych w PostgreSQL/PostGIS (m.in. wyodrębnienie warstw z placami zabaw i budynkami, transformacja układów współrzędnych oraz utworzenie indeksów przestrzennych),
+- utworzenie buforów 500 m wokół placów zabaw oraz ich agregacja,
+- analiza pokrycia powierzchni miasta oraz dostępności budynków w odniesieniu do placów zabaw,
 - wizualizacja wyników w QGIS.
+
+Analiza została przeprowadzona w układzie współrzędnych EPSG:2180.
 
 ## Wyniki
 
