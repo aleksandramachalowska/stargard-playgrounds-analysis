@@ -25,6 +25,16 @@ FROM planet_osm_polygon_2180 p
 JOIN stargard b
 ON ST_Within(p.geom_2180, b.geom);
 
+-- Ustawienie indeksów przestrzennych
+
+CREATE INDEX idx_stargard_geom
+ON stargard
+USING GIST (geom);
+
+CREATE INDEX idx_planet_osm_polygon_stargard
+ON planet_osm_polygon
+USING GIST (way);
+
 -- Wybór placów zabaw
 
 CREATE TABLE place_zabaw_polygon AS
