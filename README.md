@@ -1,46 +1,42 @@
-# Analiza dostępności placów zabaw w Stargardzie
+# Spatial Analysis of Playground Accessibility in Stargard
 
-## Opis projektu
+## Project Overview
+This project presents an analysis of playground accessibility in Stargard, Poland, using PostgreSQL, PostGIS, and QGIS.
+The aim of the analysis was to determine what proportion of the city's area and buildings is located within 500 meters of an existing playground.
 
-Projekt przedstawia analizę dostępności placów zabaw w Stargardzie z wykorzystaniem PostgreSQL, PostGIS oraz QGIS.
-Celem analizy było określenie, jaka część powierzchni miasta oraz budynków znajduje się w zasięgu 500 m od istniejących placów zabaw.
-
-## Wykorzystane technologie
-
+## Technologies Used
 - PostgreSQL
 - PostGIS
 - QGIS
 
-## Dane
+## Data
+The project uses data from the following sources:
+- OpenStreetMap (playground locations and buildings)
+- The Polish National Register of Boundaries (administrative boundaries of Stargard and Poland)
 
-W projekcie wykorzystano dane:
-- OpenStreetMap (lokalizacja placów zabaw, budynków),
-- Państwowy Rejestr Granic (granice administracyjne Stargardu i Polski).
+## Workflow
+The main steps of the analysis were:
+- Importing spatial data into a PostgreSQL database
+- Selecting and preparing spatial layers (playgrounds, buildings, and city boundaries)
+- Transforming coordinate reference systems to a common CRS (EPSG:2180)
+- Creating spatial indexes to optimize query performance
+- Generating 500-meter buffers around playgrounds
+- Aggregating results and calculating accessibility indicators
+- Visualizing the results in QGIS
 
-## Zakres prac
+## Results
+A total of 62 playgrounds were identified in the OpenStreetMap data.
+The analysis showed that 42% of the city's area is located within 500 meters of a playground.
+Additionally, 44% of buildings are located within 500 meters of a playground.
+The results indicate that some areas of the city may have limited access to playgrounds. This analysis can serve as a starting point for further research into the potential locations of new playgrounds to improve access to recreational spaces for residents.
 
-W ramach przetwarzania danych wykonano:
-- import danych przestrzennych do bazy PostgreSQL,
-- selekcję i przygotowanie warstw (place zabaw, budynki, granice miasta),
-- transformację układów współrzędnych do jednolitego układu EPSG:2180,
-- utworzenie indeksów przestrzennych w celu optymalizacji zapytań,
-- wygenerowanie buforów o promieniu 500 m wokół placów zabaw,
-- agregację wyników i obliczenie wskaźników dostępności,
-- wizualizacja wyników w QGIS.
-
-## Wnioski
-
-Z danych OpenStreetMap wyodrębiono 62 place zabaw. Analiza wykazała, że 42% powierzchni miasta znajduje się w zasięgu 500 m od placu zabaw.
-Jednocześnie 44% budynków ma dostęp do placu zabaw w promieniu 500 m. Wyniki sugerują, że nadal istnieją obszary o ograniczonym dostępie do placów zabaw. Analiza może stanowić podstawę do dalszych badań nad lokalizacją nowych placów zabaw w celu poprawy dostępności przestrzeni rekreacyjnych dla mieszkańców.
-
-## Mapa wynikowa
+## Final map
 
 ![Mapa dostępności placów zabaw](place_zabaw.png)
 
-## Ograniczenia danych
+## Data Limitations
+OpenStreetMap is a collaborative mapping project, so the completeness and accuracy of its data may vary. Some features, such as playgrounds or buildings, may not be fully mapped, and data quality depends on contributions from individual users.
+Therefore, the results should be treated as an approximation of actual spatial accessibility.
 
-Należy uwzględnić, że dane OpenStreetMap mają charakter społecznościowy, co może wpływać na ich kompletność i aktualność. Nie wszystkie obiekty (np. place zabaw lub budynki) mogą być w pełni zmapowane, a ich dokładność zależy od jakości danych wprowadzanych przez użytkowników. W związku z tym wyniki analizy należy traktować jako przybliżenie rzeczywistej dostępności przestrzennej.
-
-## Autor
-
+## Author
 Aleksandra Machałowska
