@@ -9,7 +9,7 @@ The aim of the analysis was to determine what proportion of the city's area and 
 - PostGIS
 - QGIS
 
-## Data
+## Data Used
 The project uses data from the following sources:
 - OpenStreetMap (playground locations and buildings)
 - The Polish National Register of Boundaries (administrative boundaries of Stargard and Poland)
@@ -32,7 +32,7 @@ The results indicate that some areas of the city may have limited access to play
 
 ## Final map
 
-![Mapa dostępności placów zabaw](place_zabaw.png)
+![Mapa dostępności placów zabaw](playgrounds_stargard.png)
 
 ## Data Limitations
 OpenStreetMap is a collaborative mapping project, so the completeness and accuracy of its data may vary. Some features, such as playgrounds or buildings, may not be fully mapped, and data quality depends on contributions from individual users.
